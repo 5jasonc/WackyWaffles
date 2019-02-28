@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: lightcyan;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+h1 {
+    padding: 0.5em 0.5em;
+    color: rgb(9, 9, 66);
+    background: lightblue;
+    font-size: 400%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2, h3 {
+    margin-bottom: 0.4em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+#nav {
+    display: flex;
+    list-style-type: none;
+    float: left;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav li a#active {
+    background: rgb(24, 24, 134);
+}
+
+#nav li a {
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    width: calc(25vw - 1px);
+    padding: 1em 0;
+    background: steelblue;
+    color: white;
+    border-right: 1px navy solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+#nav li a:hover {
+    background: rgb(100, 155, 201);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:active {
+    color: darkred;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: rgb(152, 158, 189);
+}
+
+p {
+    color: rgb(9, 9, 66);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+article {
+    background: lightblue;
+    margin: 4vw 20vw;
+    padding: 2.5em;
+}
+
+article p {
+    margin-bottom: 2.5em;
+}
+
+article li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#screenshots {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+img {
+    padding-bottom: 2em;
+}
+
+#gameplay, #citation {
+    padding: 1em 1em 0 1em;
+    height: fit-content;
+    border: 1px solid black;
+    margin-bottom: 2.5em;
+}
+
+#gameplay h2 {
+    margin-bottom: 1.5em;
+}
+
+#citation {
+    background: steelblue;
+}
+
+footer {
+    margin: 4vw 20vw;
+    background: steelblue;
+    padding: 2em 0;
+    text-align: center;
+}
+
+footer p {
+    color: black;
+}
+
+.small {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    article {
+        margin: 4vw 12vw;
+    }
+
+    footer {
+        margin: 4vw 12vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    article {
+        margin: 4vw 4vw;
+    }
+
+    footer {
+        margin: 4vw 4vw;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .large {
+        display: none;
+    }
+
+    .small {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    #nav {
+        flex-direction: column;
+    }
+
+    #nav li {
+        width: 100vw;
+    }
+
+    #nav li a {
+        width: 100vw;
+        border-bottom: 1px solid  navy;
+    }
+}

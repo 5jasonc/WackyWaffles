@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: lightcyan;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+h1 {
+    padding: 0.5em 0.5em;
+    color: rgb(9, 9, 66);
+    background: lightblue;
+    font-size: 400%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+#nav {
+    display: flex;
+    list-style-type: none;
+    float: left;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav li a#active {
+    background: rgb(24, 24, 134);
+}
+
+#nav li a {
+    text-decoration: none;
+    text-align: center;
+    float: left;
+    width: calc(25vw - 1px);
+    padding: 1em 0;
+    background: steelblue;
+    color: white;
+    border-right: 1px navy solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+#nav li a:hover {
+    background: rgb(100, 155, 201);
+}
+
+p {
+    color: rgb(9, 9, 66);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+article {
+    margin: 4vw 2vw;
+    background: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article div {
+    border: 1px solid black;
+    background-color: steelblue;
+    padding: 1em;
+}
+
+.price {
+    text-align: right;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+#main img {
+    margin: 4em 0;
+}
+
+#improvements {
+    display: flex;
+}
+
+#buildings {
+    display: flex;
+    flex-direction: column;
+}
+
+#buildings div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#upgrades {
+    max-width: 33vw;
+}
+
+#upgrades h2 {
+    text-align: center;
+    margin: 0.5em 0;
+    text-decoration: underline;
+}
+
+footer {
+    margin: 4vw 2vw;
+    background: steelblue;
+    padding: 2em 0;
+    text-align: center;
+}
+
+footer p {
+    color: black;
+}
+
+@media screen and (max-width: 1025px) {
+    article {
+        flex-direction: column;
+    }
+
+    #upgrades {
+        max-width: 100%;
+        border-top: 1px black solid;
+    }
+
+    #main {
+        margin: 4vw 0;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    h1 {
+        text-align: center;
+    }
+    
+    #nav {
+        flex-direction: column;
+    }
+
+    #nav li {
+        width: 100vw;
+    }
+
+    #nav li a {
+        width: 100vw;
+        border-bottom: 1px solid  navy;
+    }
+}
